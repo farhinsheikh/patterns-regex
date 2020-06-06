@@ -1,13 +1,15 @@
 echo "welcome to user registration program on master branch"
 
 #!/bin/bash -x
-echo "enter password"
-read password
-pat="^[A-Za-z0-9]{8,}[$&+,:;=?@#|'<>.-^*()%!]$"
+echo "enter email"
+read email
+pat="^([a-zA-Z0-9])+[._-+]*[0-9a-zA-Z]*[@][a-zA-Z]*([.][a-zA-Z]+){1,2}$"
 
-if [[ $password =~ $pat ]];
+if [[ $email =~ $pat ]];
 then
         echo "valid"
 else
         echo "invalid"
 fi
+
+
