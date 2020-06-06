@@ -1,15 +1,15 @@
 echo "welcome to user registration program on master branch"
 
 #!/bin/bash -x
-echo "enter first name"
+echo "enter last name"
 read name
-pat="^[A-Za-z]{3,}$"
+pat="^[a-zA-Z]{3,}$"
 
 if [[ $name =~ $pat ]];
 then
-   echo "valid"
+        echo "valid"
 else
-   echo "invalid"
+        echo "invalid"
 fi
 
 
